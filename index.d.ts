@@ -1,5 +1,3 @@
-
-
 export namespace Shuttle {
 	export type PaymentAction = 'PAYMENT' | 'AUTH';
 

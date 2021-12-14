@@ -1,8 +1,7 @@
 {
   "name": "@mrzen/shuttle-types",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TypeScript typings for Shuttle Payments JS",
-  "main": "index.js",
   "author": "Leo Adamek <leo.adamek@mrzen.com>",
   "license": "MIT",
   "private": false,
