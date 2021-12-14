@@ -1,0 +1,27 @@
+name: Publish NPM package
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  publish:
+    name: npm-publish
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@master
+    - name: Set up Node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: 15.3.0
+    - name: Build Publishable JS-Devtools/npm-publish@v1
+      run: npm i
+    - name: Publish if version has been updated
+      id: publish
+      uses: JS-Devtools/npm-publish@v1
+      with: 
+        token: ${{ secrets.NPM_AUTH_TOKEN }} 
+    - if: steps.publish.type != 'none'
+      run: |
+        echo "Version Changed: ${{ steps.publish.outputs.old-version }} ⇒ ${{steps.publish.outputs.version}}"
