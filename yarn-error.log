@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn publish
+
+PATH: 
+  /home/leo//.local/bin:/home/leo//.yarn/bin:/home/leo//.rbenv/shims:/home/leo//.rbenv/bin:/home/leo/go/bin:/home/leo//.local/bin:/home/leo//.yarn/bin:/home/leo//.rbenv/shims:/home/leo//.rbenv/bin:/home/leo/go/bin:/opt/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/leo//.krew/bin:/home/leo//.krew/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.2.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:leoadamek: failed to authenticate: Could not authenticate leoadamek: bad password
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "@mrzen/shuttle-types",
+    "version": "0.1.0",
+    "description": "TypeScript typings for Shuttle Payments JS",
+    "main": "index.js",
+    "author": "Leo Adamek <leo.adamek@mrzen.com>",
+    "license": "MIT",
+    "private": false
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
