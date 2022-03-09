@@ -36,6 +36,7 @@ export namespace Shuttle {
 		image_url: string;
 	}
 	export interface DoPaymentParams {
+		id?: string;
 		instance_key: string;
 		alt_key?: string;
 		amount: string;
@@ -43,7 +44,7 @@ export namespace Shuttle {
 		title?: string;
 		checkout_text?: string;
 		force_add?: boolean;
-		disable_recipt?: boolean;
+		disable_receipt?: boolean;
 		disable_redirect?: boolean;
 		disable_new_window?: boolean;
 		success_url?: string;
@@ -53,7 +54,7 @@ export namespace Shuttle {
 		action?: PaymentAction;
 		account?: string | { id: string } | CreateAccount;
 		frequency?: PaymentFrequency;
-		occurances?: number;
+		occurrences?: number;
 		start_date?: string;
 		start_days?: number;
 		save_card?: boolean;
